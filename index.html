@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusBloom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>FocusBloom</h1>
+        <p class="tagline">A simple focus timer</p>
+
+        <!-- Mode buttons -->
+        <div class="modes">
+            <button onclick="setMode(25, 'focus')" id="btn-focus" class="mode active">Focus</button>
+            <button onclick="setMode(5, 'short')" id="btn-short" class="mode">Short Break</button>
+            <button onclick="setMode(15, 'long')" id="btn-long" class="mode">Long Break</button>
+        </div>
+
+        <!-- Timer -->
+        <div class="timer">
+            <span id="time">25:00</span>
+        </div>
+
+        <!-- Control buttons -->
+        <div class="controls">
+            <button onclick="startTimer()" id="start">Start</button>
+            <button onclick="pauseTimer()" id="pause">Pause</button>
+            <button onclick="resetTimer()" id="reset">Reset</button>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats">
+            <p>Sessions today: <span id="sessions">0</span></p>
+            <p>Total focus time: <span id="total">0</span> min</p>
+        </div>
+
+        <!-- Tips -->
+        <div class="tips">
+            <h3>Quick Tips</h3>
+            <ul>
+                <li>Choose one task before starting</li>
+                <li>Put your phone away</li>
+                <li>Take real breaks</li>
+            </ul>
+        </div>
+
+        <p class="footer">Made by Agam Suri | COMP 3583</p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
